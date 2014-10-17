@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
 		TextView textView = (TextView) findViewById(R.id.textView1);
 		textView.setText("Button clicked! " + dateTime);
 
-		Toast.makeText(this, "This is a big toast! " + dateTime, Toast.LENGTH_SHORT)
+		Toast.makeText(this, "This is a really big toast! " + dateTime, Toast.LENGTH_SHORT)
 				.show();
 
 		Notification notification = new Notification.Builder(this)
