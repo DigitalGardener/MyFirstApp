@@ -47,11 +47,10 @@ public class MainActivity extends Activity {
 		Toast.makeText(this, "This is a big toast! " + dateTime, Toast.LENGTH_SHORT)
 				.show();
 
-		@SuppressWarnings("deprecation")
 		Notification notification = new Notification.Builder(this)
 				.setContentTitle("My Notification")
 				.setContentText("Notification's text! " + dateTime + ", message ID: " + messageId)
-				.setSmallIcon(R.drawable.ic_launcher).getNotification();
+				.setSmallIcon(R.drawable.ic_launcher).build();
 		notification.defaults = Notification.DEFAULT_SOUND;
 		
 		NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
